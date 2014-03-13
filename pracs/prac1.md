@@ -76,4 +76,10 @@ With that in mind, `vi` should be running with a temporary file provided by git,
 
 Next we will look at the history, and add another commit.
 
+Edit your `README.md` file again.  It doesn't matter what you change.
+
+Then repeat the `git add` and `git commit` commands above, putting an appropriate commit message in.
+
+Now run `git log` and you should be able to see that git knows you have made two commits.
+
 Paul Gardner-Stephen, 13 March 2014.
