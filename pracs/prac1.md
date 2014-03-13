@@ -111,4 +111,37 @@ Use `git log` on the CSEM environment to observe that the commit hasn't made it 
 
 Now run `git pull` and then re-run `git log` and observe that it now shows up: you have successfully pulled a commit from a remote repository!
 
+Send a pull request to the owner of a repository, asking them to accept changes that you are proposing.
+-------------------------------------------------------------------------------------------------------
+
+Until now, you have been using your own git repository, that you own, and noone else can change.
+
+Now we will expand horizons, by have you fork someone else's repository.  A fork is a copy of a repository at a point in time, which you control, and no longer autmatically receives changes made to the original repository.  Like a fork in the road, there is a common journey until the point of forking off in different directions.
+
+From the github web interface, fork my 2014SE3 repository.  
+
+**You will need this repository throughout the topic to get your checkpoints, so use a name you will easily remember, like 2014SE3**
+
+You can then clone it down to your CSEM account using a `git clone` command with the SSH clone URL for your shiny new forked repository.
+
+Change directory into the repository, and then into the `grades/assignment1` directory.
+
+Now modify the `prac1checkpoints.txt` file to include your FAN on a single line at the end of the file.
+
+Use `git add` and `git commit` to stage and commit the change, and `git log` to verify that your change has been committed.  Make sure to use `git push` so that the commit appears back on github.
+
+Now from the github web interface, we want to create a *pull request*.  A pull request is a request for the repository you forked to pull your changes in.
+
+Click on the pull request icon on the right of the display (looks like a line and arrow joining together at a dot).  Then choose `new pull request`, and give it a desriptive name, like "checkpoint 1 for Colonel Powell".  This will then show up on my repo, and I will be able to accept it, after which you will have your checkpoint accepted, which you can verify by looking at `grades/assignment1/prac1checkpoints.txt` in [the original 2014SE3 repository](https://github.com/gardners/2014SE3/blog/master/grades/assignment1/prac1checkpoints.txt).
+
+Then you are all done!
+
+Note that this can be done any time during semester, and I will (eventually) see and act on the pull request.
+
+Use git to request that your checkpoint be marked off.
+------------------------------------------------------
+
+See above task; you have already done it.
+
+
 Paul Gardner-Stephen, 13 March 2014.
