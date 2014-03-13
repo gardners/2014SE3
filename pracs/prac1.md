@@ -91,5 +91,18 @@ Log in to github using your git username, and create a new repository called `se
 
 Once you have done all that, browse your new repository.  There will be a box titled `SSH clone URL`.  Copy that URL and use a command like: `git clone <that url>` from in your ~/se3 directory on lofty.  That will clone your new repository onto lofty.  You now have a local copy you can work on.
 
+Push commits from a local repository to a remote repository hosted on github.
+-----------------------------------------------------------------------------
+
+Similar to before, create a file, and make some commits.  Use `git log` to verify that the commits were made.
+
+Now look at the online page on github for your repository.  You won't see the commits there, because they only exist in your local repository on lofty right now.  This is a good thing.  It is what makes git usable when you are offline, for example, sitting in economy over the Pacific Ocean.
+
+Now use `git push` to push those changes to github, and notice that they appear there.
+
+Pull commits from a remote repository to a local git repository.
+----------------------------------------------------------------
+
+I'll write this in a moment.
 
 Paul Gardner-Stephen, 13 March 2014.
