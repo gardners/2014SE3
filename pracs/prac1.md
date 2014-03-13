@@ -105,6 +105,10 @@ Now use `git push` to push those changes to github, and notice that they appear 
 Pull commits from a remote repository to a local git repository.
 ----------------------------------------------------------------
 
-I'll write this in a moment.
+From the web interface for your prac1 repository, use the icon to create a new file.  It doesn't matter what it is called, within reason.  Use the web-based editor to commit some content into it.
+
+Use `git log` on the CSEM environment to observe that the commit hasn't made it into your local repository there.
+
+Now run `git pull` and then re-run `git log` and observe that it now shows up: you have successfully pulled a commit from a remote repository!
 
 Paul Gardner-Stephen, 13 March 2014.
