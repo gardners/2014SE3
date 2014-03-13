@@ -89,6 +89,8 @@ Log in to github using your git username, and create a new repository called `se
 
 *This is probably a good time to go into "account settings" and then "SSH keys" on github, followed by "add key", and add the public key for your lofty account so that you can push changes to github without having to supply your github password every time.  You can find your public key in `.ssh/id_dsa.pub` on lofty.*
 
+*If you have no `.ssh/id_dsa.pub` run the command `ssh-keygen -t dsa` to create one.  It will think for a few seconds, and ask you to confirm writing it to the file.*
+
 Once you have done all that, browse your new repository.  There will be a box titled `SSH clone URL`.  Copy that URL and use a command like: `git clone <that url>` from in your ~/se3 directory on lofty.  That will clone your new repository onto lofty.  You now have a local copy you can work on.
 
 Push commits from a local repository to a remote repository hosted on github.
