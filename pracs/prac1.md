@@ -41,6 +41,39 @@ If you don't already have a github account, go to [github.com](http://github.com
 
 As always, you should practice good password hygiene, and not use the same password as for any other service, including University systems.  **It is better to have strong passwords written on pieces of paper and secured in your physical wallet than to have weak passwords that might as well be written in plane sight for everyone to see**
 
+Create a local git repository, and make multiple commits to it.
+---------------------------------------------------------------
 
+If you haven't already, it is probably a good idea to make a subdirectory in your home directory to hold all the files you will use for SE3.  We will use a number of directories over the semester, so I do encourage you to keep them all together somewhere.  My recommendation is that you create a directory called `se3` in your home directory, and then work from in there:
+
+First, create the directory: `mkdir ~/se3`
+
+Then change into that directory whenever you are doing SE3 work:  `cd ~/se3`
+
+Now that you are in your SE3 directory, it's time to create your first git repository, which in a fit of imagination, we will call `prac1`:
+
+Use this command: `git --init prac1`
+
+Using your favourite text editor, create a file called `README.md` in that directory.  From the command line, you could use `pico README.md` or if you are brave `vi README.md`.  
+
+*Bravery has been called stupidity with a cause, where stupidity refers to taking actions that might cause you pain.  This is fair.  Learning to use the `vi` editor is brave, because the learning curve can be a bit painful.  But it is not without a cause, because `vi` is a powerful editor that is available on practically any computer system you might work on at the command-line level. Or at least all the interesting ones, anyway.  Using `vi` in this topic is safer than normal, because you will be learning how to use source control to be able to reverse any deadly mistakes that you make :)*
+
+Whatever editor you choose, write a couple of lines of *publicly presentable* text into the file. I say publicly presentable, because this text will soon be visible to the entire world to read.  Be responsible.  When done, exit the editor.
+
+Then tell git you would like to add the changes to that file to the next commit using the `git add` command:  `git add README.md`
+
+This tells git that you want to record these changes.  The actual remembering happens with `git commit`, using a command like:  `git commit`
+
+This should drop you into the `vi` editor.  Oh dear, even if you weren't planning on being brave, I have tricked you into it anyway.  Naughty me.
+
+Here is all you need to know about vi for now:
+  * If in doubt, press the escape (ESC) key a few times to make sure you are in command mode.
+  * To begin typing, move the cursor somewhere, and then press `i` once to enter edit mode.  You can now type to your hearts content.  When done, press the escape (ESC) key to go back to command mode.
+  * When you want to save and quit, press escape (ESC) a few times, and then two capital Z's.
+  * If you want to quit without saving instead, press escape (ESC) a few times, and then type the following characters: `:q!` and press enter.  You will quit without saving.
+
+With that in mind, `vi` should be running with a temporary file provided by git, asking you for a commit message, and telling you which files will be committed.  Write a one line message, perhaps along the lines of `my first commit`, save and exit `vi`.  Your commit has been recorded.
+
+Next we will look at the history, and add another commit.
 
 Paul Gardner-Stephen, 13 March 2014.
