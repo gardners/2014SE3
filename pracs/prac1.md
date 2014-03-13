@@ -52,7 +52,7 @@ Then change into that directory whenever you are doing SE3 work:  `cd ~/se3`
 
 Now that you are in your SE3 directory, it's time to create your first git repository, which in a fit of imagination, we will call `prac1`:
 
-Use this command: `git --init prac1`
+Use this command: `git init prac1`
 
 Using your favourite text editor, create a file called `README.md` in that directory.  From the command line, you could use `pico README.md` or if you are brave `vi README.md`.  
 
