@@ -82,4 +82,14 @@ Then repeat the `git add` and `git commit` commands above, putting an appropriat
 
 Now run `git log` and you should be able to see that git knows you have made two commits.
 
+Create a git repository on github
+---------------------------------
+
+Log in to github using your git username, and create a new repository called `se3prac1`, using the web interface.
+
+*This is probably a good time to go into "account settings" and then "SSH keys" on github, followed by "add key", and add the public key for your lofty account so that you can push changes to github without having to supply your github password every time.  You can find your public key in `.ssh/id_dsa.pub` on lofty.*
+
+Once you have done all that, browse your new repository.  There will be a box titled `SSH clone URL`.  Copy that URL and use a command like: `git clone <that url>` from in your ~/se3 directory on lofty.  That will clone your new repository onto lofty.  You now have a local copy you can work on.
+
+
 Paul Gardner-Stephen, 13 March 2014.
