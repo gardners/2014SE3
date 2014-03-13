@@ -100,7 +100,7 @@ Similar to before, create a file, and make some commits.  Use `git log` to verif
 
 Now look at the online page on github for your repository.  You won't see the commits there, because they only exist in your local repository on lofty right now.  This is a good thing.  It is what makes git usable when you are offline, for example, sitting in economy over the Pacific Ocean.
 
-Now use `git push` to push those changes to github, and notice that they appear there.
+Now use `git push origin master` to push those changes to the master branch on github, and notice that they appear there. In future, just `git push` will suffice.
 
 Pull commits from a remote repository to a local git repository.
 ----------------------------------------------------------------
