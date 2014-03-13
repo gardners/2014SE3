@@ -39,7 +39,7 @@ Create a github account.
 
 If you don't already have a github account, go to [github.com](http://github.com) and create one.
 
-As always, you should practice good password hygiene, and not use the same password as for any other service, including University systems.  **It is better to have strong passwords written on pieces of paper and secured in your physical wallet than to have weak passwords that might as well be written in plane sight for everyone to see**
+As always, you should practice good password hygiene, and not use the same password as for any other service, including University systems.  **It is better to have strong passwords written on pieces of paper and secured in your physical wallet than to have weak passwords that might as well be written in plain sight for everyone to see**
 
 Create a local git repository, and make multiple commits to it.
 ---------------------------------------------------------------
