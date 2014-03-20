@@ -20,8 +20,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Some code derived from some code derived from serval-dna and used under GPLv2.
 This code is therefore released under the GPLv2.
-
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
