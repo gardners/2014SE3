@@ -187,8 +187,8 @@ int main(int argc, char *argv[])
 				/* check for a properly formed page request*/
 				}else if (strstr(line,httpcode) > 0){
 					int loc = strlen(line) - strlen(strstr(line,httpcode));
-					/* check if the address they are seeking is free of any white space*/
 					int clear = 0;
+					/* check if the address they are seeking is free of any white space*/
 					for (i = 5; i < loc-2; i++){
 						if (line[i] == ' '){clear = 1;}
 					}
