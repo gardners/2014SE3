@@ -154,8 +154,8 @@ int main(int argc, char *argv[])
 								char tokenresponse[1024] = "HTTP/1.0 200 OK\r\nContent-length: 8\r\nContent-type: text/html\r\n\r\n";
 								
 								strcat(tokenresponse,token);
-
 								write(client_fd,tokenresponse,strlen(tokenresponse));
+
 								
 							/* this server only handles HTTP 200 responses, so if we're sent anything different, we hand down a 500 error to the client.*/
 							} 
