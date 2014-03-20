@@ -95,8 +95,8 @@ int main(int argc, char *argv[])
 						} else {
 							i = 16;
 					}
-						}
 					
+						}
 					if (portbuf > 0){
 						port = portbuf;
 
