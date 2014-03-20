@@ -108,8 +108,8 @@ int main(int argc, char *argv[])
 						}
 
   						struct sockaddr_in addr;  
-  						addr.sin_family = AF_INET;     
   						addr.sin_port = htons(port);   
+  						addr.sin_family = AF_INET;     
   						addr.sin_addr = *((struct in_addr *)hostent->h_addr);
 
   						bzero(&(addr.sin_zero),8);     
