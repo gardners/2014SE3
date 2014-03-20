@@ -154,9 +154,8 @@ Similarly, if it takes too long to run (more than about a minute), then just pre
 
 If, on the other hand, 24 or 25 of 25 tests pass, then tell git that this version is good, with `git bisect good`
 
-Repeat this process until git shows you something like:
+Repeat this process (from the start of "Testing the commits to find the first bad one"), i.e., compiling and running the tests, and then entering either `git bisect good` or `git bisect bad` based on the test results until git shows you something like:
 
-~/tmp/2014SE3 {gardners}:git bisect good                                                        
     b33abc3702f514e034ff106eed955210acc3e398 is the first bad commit
     commit b33abc3702f514e034ff106eed955210acc3e398
     Author: gardners <paul@servalproject.org>
