@@ -144,13 +144,13 @@ It can take a couple of minutes to run, and should produce output similar to tha
     About to kill student process 16283
     Seeing how that went.
 
-If compilation failed, or any lines begin with FAIL, then tell git that it is a bad commit with:
+If compilation failed, or less than 24 of 25 tests pass, then tell git that it is a bad commit with:
 
     git bisect bad
     
 Similarly, if it takes too long to run (more than about a minute), then just press CONTROL and C to tell it to stop, and then issue the `git bisect bad` command.
 
-If, on the other hand, 25 of 25 tests pass, then tell git that this version is good, with `git bisect good`
+If, on the other hand, 24 or 25 of 25 tests pass, then tell git that this version is good, with `git bisect good`
 
 Repeat this process until git shows you something like:
 
@@ -193,7 +193,9 @@ You now need to prove this, and produce documentation to show this so that you c
 
 Now on github, you need to submit an issue onto my master 2014SE3 repository.
 
-The following tells you the general content you should put in the issue, but you should make sure that it "tells the story", i.e., that you have detected a regression, and identified the first bad commit, and presenting the test results for the last good commit and first bad commit as evidence. 
+The following tells you the general content you should put in the issue, but you should make sure that it "tells the story", i.e., that you have detected a regression, and identified the first bad commit, and presenting the test results for the last good commit and first bad commit as evidence.  You can see the sort of thing I am looking for at: https://github.com/gardners/2014SE3/issues/25
+
+To get the indented text blocks, put four spaces at the beginning of each line of text you paste in.  The commit IDs will automatically be turned into links.
 
 For each of those two commits, you will want to check them out using `git checkout commmit_id`, where `commit_id` is replaced with the commit (or the first few characters of it), e.g.:
 
