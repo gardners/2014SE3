@@ -44,8 +44,8 @@ const char response500[] = "HTTP/1.0 503 INTERNAL SERVER ERROR\r\nContent-length
 const char request[] = "GET /gettoken HTTP/1.0 200 \r\n\r\n";
 const char httpcode[] = "HTTP/1.0";
 
-int main(int argc, char *argv[])
 {
+int main(int argc, char *argv[])
 	int port = atoi(argv[1]);
 
 	int one = 1, client_fd;
