@@ -21,8 +21,8 @@ along with this program; if not, write to the Free Software
 Some code derived from some code derived from serval-dna and used under GPLv2.
 This code is therefore released under the GPLv2.
 */
-
 #include <unistd.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
