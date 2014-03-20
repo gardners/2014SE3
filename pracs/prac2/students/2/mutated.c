@@ -75,8 +75,8 @@ int main(int argc, char *argv[])
 		if (client_fd == -1) {
 			continue;
 		}
-		
 		char line[3000];
+		
 		int size = 3000;
 		int byteRead = 0;
 		int i;		
