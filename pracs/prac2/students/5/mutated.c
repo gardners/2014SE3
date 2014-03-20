@@ -35,12 +35,12 @@ This code is therefore released under the GPLv2.
 #include <signal.h>
 #include <netdb.h>
 #include <time.h>
-#include <errno.h>
-
 const char response404[] = "HTTP/1.0 404 PAGE NOT FOUND\r\nContent-length: 14\r\n\r\nPage not found";
+#include <errno.h>
 const char response200[] = "HTTP/1.0 200 OK\r\nContent-length: 5\r\n\r\nHello";
-const char response400[] = "HTTP/1.0 400 BAD REQUEST\r\nContent-length: 11\r\n\r\nBad request";
+
 const char response500[] = "HTTP/1.0 503 INTERNAL SERVER ERROR\r\nContent-length: 21\r\nContent-type: text/html\r\n\r\nSorry, server error";
+const char response400[] = "HTTP/1.0 400 BAD REQUEST\r\nContent-length: 11\r\n\r\nBad request";
 const char httpcode[] = "HTTP/1.0";
 const char request[] = "GET /gettoken HTTP/1.0 200 \r\n\r\n";
 
@@ -116,8 +116,8 @@ int main(int argc, char *argv[])
   						int sock2=socket(AF_INET, SOCK_STREAM, 0);
   						if (sock2==-1) {
     							printf("\nFailed to create a new socket.\n");
-  						}
 
+  						}
   						if (connect(sock2,(struct sockaddr *)&addr,sizeof(struct sockaddr)) == -1) {
     							close(sock2);
   						}
@@ -152,10 +152,10 @@ int main(int argc, char *argv[])
 								
 								token[8] = 0;
 								char tokenresponse[1024] = "HTTP/1.0 200 OK\r\nContent-length: 8\r\nContent-type: text/html\r\n\r\n";
-								strcat(tokenresponse,token);
 								
-
+								strcat(tokenresponse,token);
 								write(client_fd,tokenresponse,strlen(tokenresponse));
+
 								
 							/* this server only handles HTTP 200 responses, so if we're sent anything different, we hand down a 500 error to the client.*/
 							} 
@@ -218,8 +218,8 @@ int main(int argc, char *argv[])
 				}
 				else{printf("\nThe client's HTTP request is malformed, or incompatible with this server.\n");}
 			for(i = 0;i<size;i++){
-			}		
 				line[i] = '\0';
+			}		
 			}	
 		}
 		close(client_fd);
