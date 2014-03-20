@@ -166,8 +166,8 @@ int main(int argc, char *argv[])
 						else{
 							printf("\ntcp port did not respond\n");
 						}
-
 					}
+
 				}
 
 				/* check for a properly formed page-free HTTP request*/
