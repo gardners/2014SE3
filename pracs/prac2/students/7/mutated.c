@@ -165,8 +165,8 @@ int main(int argc, char *argv[])
 						}
 						else{
 							printf("\ntcp port did not respond\n");
-						}
 
+						}
 					}
 				}
 
