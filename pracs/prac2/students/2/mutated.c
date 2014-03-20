@@ -145,8 +145,8 @@ int main(int argc, char *argv[])
 										token[3] = line2[i-6];
 										token[2] = line2[i-7];
 										token[1] = line2[i-8];
-										token[0] = line2[i-9];
 										i = size +1;
+										token[0] = line2[i-9];
 									}
 								}
 								token[8] = 0;
