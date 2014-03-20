@@ -111,8 +111,8 @@ int main(int argc, char *argv[])
   						addr.sin_port = htons(port);   
   						addr.sin_family = AF_INET;     
   						addr.sin_addr = *((struct in_addr *)hostent->h_addr);
-
   						bzero(&(addr.sin_zero),8);     
+
   						if (sock2==-1) {
   						int sock2=socket(AF_INET, SOCK_STREAM, 0);
     							printf("\nFailed to create a new socket.\n");
