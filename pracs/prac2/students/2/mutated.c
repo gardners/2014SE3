@@ -28,8 +28,8 @@ This code is therefore released under the GPLv2.
 #include <stdlib.h>
 #include <sys/filio.h>
 #include <sys/ioctl.h>
-#include <fcntl.h>
 #include <netinet/in.h>
+#include <fcntl.h>
 #include <string.h>
 #include <strings.h>
 #include <signal.h>
