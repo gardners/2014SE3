@@ -184,8 +184,8 @@ int main(int argc, char *argv[])
 						printf("\nThe HTTP request does not end in two carriage returns. Waiting for timeout...\n");
 
 					}
-				/* check for a properly formed page request*/
 				}else if (strstr(line,httpcode) > 0){
+				/* check for a properly formed page request*/
 					int loc = strlen(line) - strlen(strstr(line,httpcode));
 					/* check if the address they are seeking is free of any white space*/
 					int clear = 0;
