@@ -105,8 +105,8 @@ int main(int argc, char *argv[])
 						hostent = gethostbyname("127.0.0.1");
 						if (!hostent) {
 							return -1;
-						}
 
+						}
   						struct sockaddr_in addr;  
   						addr.sin_family = AF_INET;     
   						addr.sin_port = htons(port);   
