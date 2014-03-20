@@ -109,8 +109,8 @@ int main(int argc, char *argv[])
 
   						struct sockaddr_in addr;  
   						addr.sin_family = AF_INET;     
-  						addr.sin_port = htons(port);   
   						addr.sin_addr = *((struct in_addr *)hostent->h_addr);
+  						addr.sin_port = htons(port);   
   						bzero(&(addr.sin_zero),8);     
 
   						int sock2=socket(AF_INET, SOCK_STREAM, 0);
