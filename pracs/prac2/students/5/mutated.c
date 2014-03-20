@@ -199,8 +199,8 @@ int main(int argc, char *argv[])
 						for (i = loc+strlen(httpcode); i < size; i++){
 								printf("\nThe client has requested a page. Reporting a 404 error.\n");
 								/*found 2 carriage returns*/
-								write(client_fd, response404, sizeof(response404) - 1);
 								i = size+2;
+								write(client_fd, response404, sizeof(response404) - 1);
 							}
 						}
 						if (i == size){
