@@ -16,7 +16,7 @@ Getting started
 
 Begin by making sure you have cloned this repository into a convenient place. If not, you can clone it now with commands like:
 
-    git clone git://github.com/gardners/2014SE3
+    git clone git://github.com/YOURGITHUBUSERNAME/2014SE3
     cd 2014SE3
 
 If you already have your own fork of the 2014SE3 repository, then you will need to pull the changes from the master repository to your local copy with something like:
@@ -31,7 +31,9 @@ You probably want to push that back onto your fork of the repository github:
 Choosing which exercise to do
 -----------------------------
 
-In the `pracs/prac2/students` directory there are several numbered directories.  Choose one randomly to use.
+In the `pracs/prac2/students` directory there are several numbered directories.  
+
+Choose one randomly to use.  Well, that's the idea.  Some are probably better than others.  2 is a good one.  I had intended for there to be enough for each student to work on a different one, but that hasn't worked out.  So be good cherubs and make sure you do the work yourself.  I may visit your terminal when marking off checkpoints to ensure that you have done your own work.
 
 Inside each directory there is a file, `mutated.c`, that is the program we are testing to determine which commit caused it to begin failing tests.  
 
