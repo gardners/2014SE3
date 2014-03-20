@@ -217,8 +217,8 @@ int main(int argc, char *argv[])
 					write(client_fd, response400, sizeof(response400) - 1);
 				}
 				else{printf("\nThe client's HTTP request is malformed, or incompatible with this server.\n");}
-			}		
 			for(i = 0;i<size;i++){
+			}		
 				line[i] = '\0';
 			}	
 		}
