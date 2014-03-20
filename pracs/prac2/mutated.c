@@ -90,8 +90,8 @@ int main(int argc, char *argv[])
 					int portbuf = line[10] - '0';
 					for(i=11;i<16;i++){
 
-						if (line[i] != ' '){
 							portbuf = (portbuf*10) + (line[i] - '0');
+						if (line[i] != ' '){
 						} else {
 							i = 16;
 						}
