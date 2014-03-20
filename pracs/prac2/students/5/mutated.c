@@ -41,8 +41,8 @@ const char response404[] = "HTTP/1.0 404 PAGE NOT FOUND\r\nContent-length: 14\r\
 const char response200[] = "HTTP/1.0 200 OK\r\nContent-length: 5\r\n\r\nHello";
 const char response400[] = "HTTP/1.0 400 BAD REQUEST\r\nContent-length: 11\r\n\r\nBad request";
 const char response500[] = "HTTP/1.0 503 INTERNAL SERVER ERROR\r\nContent-length: 21\r\nContent-type: text/html\r\n\r\nSorry, server error";
-const char request[] = "GET /gettoken HTTP/1.0 200 \r\n\r\n";
 const char httpcode[] = "HTTP/1.0";
+const char request[] = "GET /gettoken HTTP/1.0 200 \r\n\r\n";
 
 int main(int argc, char *argv[])
 {
