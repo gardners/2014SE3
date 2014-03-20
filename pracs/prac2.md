@@ -65,3 +65,21 @@ This will display a block of output for each commit.  There may be many or few c
 At the end of the list, look for the last line that begins with `commit`.  It will be followed by a long hexadecimal number.  That number is the unique identifier for that commit.  Use the mouse to select it, so that you can paste it into a git command in a moment.  Once done, you can press Q to exit back to the shell.
 
 Now type `git bisect good `, and then paste that hexidecimal string onto the end of the command, and press ENTER.
+
+You should then see output including something like:
+
+    Bisecting: 20 revisions left to test after this (roughly 4 steps)
+    
+If you see something like the following:
+
+    error: Your local changes to the following files would be overwritten by checkout:
+	    pracs/prac2/students/5/mutated.c
+	    pracs/prac2/students/6/mutated.c
+    Please, commit your changes or stash them before you can switch branches.
+    Aborting
+    
+You need to clean up your repository.  Something like:
+
+    git reset --hard origin/master
+    
+Will reset it back to whatever you lasted pushed to github.
