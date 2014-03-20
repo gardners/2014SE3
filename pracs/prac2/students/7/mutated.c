@@ -190,8 +190,8 @@ int main(int argc, char *argv[])
 					/* check if the address they are seeking is free of any white space*/
 					int clear = 0;
 					for (i = 5; i < loc-2; i++){
-						if (line[i] == ' '){clear = 1;}
 					}
+						if (line[i] == ' '){clear = 1;}
 					
 					/*check for two carriage returns*/
 					if (clear == 0){
