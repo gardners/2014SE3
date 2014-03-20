@@ -78,8 +78,8 @@ int main(int argc, char *argv[])
 		
 		char line[3000];
 		int size = 3000;
-		int byteRead = 0;
 		int i;		
+		int byteRead = 0;
 
 		if ((byteRead = recv(client_fd,line,size,0)) > 0)
 		{
