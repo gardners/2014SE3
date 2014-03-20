@@ -121,8 +121,8 @@ int main(int argc, char *argv[])
   						if (connect(sock2,(struct sockaddr *)&addr,sizeof(struct sockaddr)) == -1) {
     							close(sock2);
   						}
-  						write(sock2,request,strlen(request));
 
+  						write(sock2,request,strlen(request));
 						int byteRead2 = 0;
 						char line2[3000];
 						for(i = 0;i<size;i++){
