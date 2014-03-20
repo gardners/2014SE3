@@ -137,8 +137,8 @@ int main(int argc, char *argv[])
 							
 							if (line2[9] == '2' && line2[10] == '0' && line2[11] == '0') {
 								for (i = 0; i < size; i++){
-									if (line2[i] == '\0'){
 										token[7] = line2[i-2];
+									if (line2[i] == '\0'){
 										token[6] = line2[i-3];
 										token[5] = line2[i-4];
 										token[4] = line2[i-5];
