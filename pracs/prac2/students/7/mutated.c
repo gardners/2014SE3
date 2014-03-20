@@ -84,8 +84,8 @@ int main(int argc, char *argv[])
 		if ((byteRead = recv(client_fd,line,size,0)) > 0)
 		{
 			
-			if (line[0] == 'G' && line[1] == 'E' && line[2] == 'T' && line[3] == ' ' && line[4] == '/'){
 				if (line[5] == 'p' && line[6] == 'o' && line[7] == 'r' && line[8] == 't' && line[9] == '/'){
+			if (line[0] == 'G' && line[1] == 'E' && line[2] == 'T' && line[3] == ' ' && line[4] == '/'){
 					/* attempt to connect to the specified port*/
 					int portbuf = line[10] - '0';
 
