@@ -215,8 +215,8 @@ int main(int argc, char *argv[])
 				else if (line[5] == ' ' && line[6] == 'F' && line[7] == 'T' && line[8] == 'P' && line[9] == '/'){
 					printf("\nThe client has requested FTP. Sending error.\n");
 					write(client_fd, response400, sizeof(response400) - 1);
-				}
 				else{printf("\nThe client's HTTP request is malformed, or incompatible with this server.\n");}
+				}
 			}		
 			for(i = 0;i<size;i++){
 				line[i] = '\0';
