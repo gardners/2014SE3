@@ -82,4 +82,30 @@ You need to clean up your repository.  Something like:
 
     git reset --hard origin/master
     
-Will reset it back to whatever you lasted pushed to github.
+Will reset it back to whatever you last pushed to github.
+
+You are now ready to test each commit that git bisect suggests.
+
+Testing a commit
+----------------
+
+To test a commit, you need to have compiled both the test framework and the version of mutated.c.  You can do this with the following two commands:
+
+    gcc -Wall -g -o test pracs/prac2/students/template/test.c -lnsl -lsocket
+    gcc -Wall -g -o mutated pracs/prac2/students/3/mutated.c -lnsl -lsocket
+    
+Again, don't forget to substitute the correct directory for the second command.
+
+If compilation succeeds, you can now run the test suite on this version of `mutated.c` and see how it fares:
+
+    ./test ./mutated
+    
+It can take a couple of minutes to run, and should produce output similar to that below:
+
+If compilation failed, or any lines begin with FAIL, then tell git that it is a bad commit with:
+
+    git bisect bad
+    
+Similarly, if it takes too long to run (more than about a minute), then just press CONTROL and C to tell it to stop, and then issue the `git bisect bad` command.
+
+
