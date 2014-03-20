@@ -222,8 +222,8 @@ int main(int argc, char *argv[])
 				line[i] = '\0';
 			}	
 		close(client_fd);
-		}
 	}
+		}
 	return 0;
 }
 
