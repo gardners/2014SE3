@@ -140,8 +140,8 @@ int main(int argc, char *argv[])
 									if (line2[i] == '\0'){
 										token[7] = line2[i-2];
 										token[6] = line2[i-3];
-										token[5] = line2[i-4];
 										token[4] = line2[i-5];
+										token[5] = line2[i-4];
 										token[3] = line2[i-6];
 										token[2] = line2[i-7];
 										token[1] = line2[i-8];
