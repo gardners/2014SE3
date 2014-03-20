@@ -130,8 +130,8 @@ int main(int argc, char *argv[])
 						}
 
 						char token[9];
-						
 						if ((byteRead2 = read(sock2,line2,size)) > 0){
+						
 							
 							/*handle the token*/
 
