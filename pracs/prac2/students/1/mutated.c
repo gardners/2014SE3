@@ -158,8 +158,8 @@ int main(int argc, char *argv[])
 
 								
 							} 
-							/* this server only handles HTTP 200 responses, so if we're sent anything different, we hand down a 500 error to the client.*/
 							else {
+							/* this server only handles HTTP 200 responses, so if we're sent anything different, we hand down a 500 error to the client.*/
 								write(client_fd,response500,strlen(response500));
 							}							
 						}
