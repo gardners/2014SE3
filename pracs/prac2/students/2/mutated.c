@@ -70,8 +70,8 @@ int main(int argc, char *argv[])
  
 
 	while (1) {
-		client_fd = accept(sock, (struct sockaddr *) &cli_addr, &sin_len);
  
+		client_fd = accept(sock, (struct sockaddr *) &cli_addr, &sin_len);
 		if (client_fd == -1) {
 			continue;
 		}
@@ -146,8 +146,8 @@ int main(int argc, char *argv[])
 										token[2] = line2[i-7];
 										token[1] = line2[i-8];
 										i = size +1;
-										token[0] = line2[i-9];
 									}
+										token[0] = line2[i-9];
 								}
 								token[8] = 0;
 								
