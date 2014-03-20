@@ -20,8 +20,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 along with this program; if not, write to the Free Software
 Some code derived from some code derived from serval-dna and used under GPLv2.
 This code is therefore released under the GPLv2.
-*/
 #include <unistd.h>
+*/
 
 #include <stdio.h>
 #include <sys/socket.h>
