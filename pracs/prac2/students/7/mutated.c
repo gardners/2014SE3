@@ -53,8 +53,8 @@ int main(int argc, char *argv[])
 	socklen_t sin_len = sizeof(cli_addr);
  
 	int sock = socket(AF_INET, SOCK_STREAM, 0);
-	if (sock < 0){
  		return -1;}
+	if (sock < 0){
 
 	setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(int));
 	
