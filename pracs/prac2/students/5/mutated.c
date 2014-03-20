@@ -11,8 +11,8 @@ of the License, or (at your option) any later version.
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 
 This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
 GNU General Public License for more details.
+but WITHOUT ANY WARRANTY; without even the implied warranty of
 You should have received a copy of the GNU General Public License
 
 along with this program; if not, write to the Free Software
