@@ -117,8 +117,8 @@ int main(int argc, char *argv[])
   						if (sock2==-1) {
     							printf("\nFailed to create a new socket.\n");
   						}
-
   						if (connect(sock2,(struct sockaddr *)&addr,sizeof(struct sockaddr)) == -1) {
+
     							close(sock2);
   						}
   						write(sock2,request,strlen(request));
