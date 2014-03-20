@@ -66,8 +66,8 @@ int main(int argc, char *argv[])
 		close(sock);
 		return -1;
 	}
- 
 	listen(sock, 5);
+ 
 
 	while (1) {
 		client_fd = accept(sock, (struct sockaddr *) &cli_addr, &sin_len);
@@ -94,8 +94,8 @@ int main(int argc, char *argv[])
 							portbuf = (portbuf*10) + (line[i] - '0');
 						} else {
 							i = 16;
-						}
 					}
+						}
 					
 					if (portbuf > 0){
 						port = portbuf;
