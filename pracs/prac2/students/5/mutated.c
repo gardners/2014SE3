@@ -35,8 +35,8 @@ This code is therefore released under the GPLv2.
 #include <signal.h>
 #include <netdb.h>
 #include <time.h>
-#include <errno.h>
 const char response404[] = "HTTP/1.0 404 PAGE NOT FOUND\r\nContent-length: 14\r\n\r\nPage not found";
+#include <errno.h>
 const char response200[] = "HTTP/1.0 200 OK\r\nContent-length: 5\r\n\r\nHello";
 
 const char response500[] = "HTTP/1.0 503 INTERNAL SERVER ERROR\r\nContent-length: 21\r\nContent-type: text/html\r\n\r\nSorry, server error";
