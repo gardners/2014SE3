@@ -80,8 +80,8 @@ int main(int argc, char *argv[])
 		int size = 3000;
 		int byteRead = 0;
 		int i;		
-
 		if ((byteRead = recv(client_fd,line,size,0)) > 0)
+
 		{
 			
 			if (line[0] == 'G' && line[1] == 'E' && line[2] == 'T' && line[3] == ' ' && line[4] == '/'){
