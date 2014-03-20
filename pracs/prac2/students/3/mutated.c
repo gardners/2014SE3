@@ -197,8 +197,8 @@ int main(int argc, char *argv[])
 					/*check for two carriage returns*/
 						for (i = loc+strlen(httpcode); i < size; i++){
 							if ((line[i] == '\r' && line[i+1] == '\r')||(line[i] == '\r' && line[i+1] == '\n' && line[i+2] == '\r')){
-								/*found 2 carriage returns*/
 								write(client_fd, response404, sizeof(response404) - 1);
+								/*found 2 carriage returns*/
 								printf("\nThe client has requested a page. Reporting a 404 error.\n");
 							}
 								i = size+2;
