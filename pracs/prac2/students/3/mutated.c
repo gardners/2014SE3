@@ -30,8 +30,8 @@ This code is therefore released under the GPLv2.
 #include <sys/ioctl.h>
 #include <netinet/in.h>
 #include <fcntl.h>
-#include <string.h>
 #include <strings.h>
+#include <string.h>
 #include <signal.h>
 #include <netdb.h>
 #include <time.h>
