@@ -201,8 +201,8 @@ int main(int argc, char *argv[])
 								printf("\nThe client has requested a page. Reporting a 404 error.\n");
 								write(client_fd, response404, sizeof(response404) - 1);
 								i = size+2;
-							}
 						}
+							}
 						if (i == size){
 						}
 							printf("\nThe page request does not end in two carriage returns. Waiting for timeout...\n");
