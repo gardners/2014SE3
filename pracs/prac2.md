@@ -45,6 +45,12 @@ You can also explore the history from the command line using a command like:
     
 That command will show all commits that modified the file `pracs/prac2/students/6/mutated.c`.  Make sure to replace the file name with the one you are interested in!
 
+Before we go any further, you should compile the test framework with a command like:
+
+    gcc -Wall -g -o test pracs/prac2/students/template/test.c -lnsl -lsocket
+    
+This only needs to be done once.  If you do it again during the bisect, you will compile old versions of the test framework, which is not what we want to do in this case.
+
 Starting to bisect
 ------------------
 
@@ -86,12 +92,11 @@ Will reset it back to whatever you last pushed to github.
 
 You are now ready to test each commit that git bisect suggests.
 
-Testing a commit
-----------------
+Testing the commits to find the first bad one
+---------------------------------------------
 
-To test a commit, you need to have compiled both the test framework and the version of mutated.c.  You can do this with the following two commands:
+To test a commit, you need to have compile the version of mutated.c.  You can do this with the following command:
 
-    gcc -Wall -g -o test pracs/prac2/students/template/test.c -lnsl -lsocket
     gcc -Wall -g -o mutated pracs/prac2/students/3/mutated.c -lnsl -lsocket
     
 Again, don't forget to substitute the correct directory for the second command.
@@ -102,10 +107,93 @@ If compilation succeeds, you can now run the test suite on this version of `muta
     
 It can take a couple of minutes to run, and should produce output similar to that below:
 
+    connect() to port failed: Connection refused
+    Port 49050 is available for use by student programme.
+    connect() to port failed: Connection refused
+    SUCCESS: Accepts connections on specified TCP port
+    FAIL: Accepting multiple connections on a TCP port. Did not complete 1,000 connections in less than 5 minutes.
+    SUCCESS: Accepted 1,000 connections in less than a minute.
+    SUCCESS: HTTP request 'GET / HTTP/1.0\r\n\r\n' returned HTTP response code 200
+    SUCCESS: HTTP request 'GET / HTTP/1.0\r\r' returned HTTP response code 200
+
+    The HTTP request does not end in two carriage returns. Waiting for timeout...
+    SUCCESS: HTTP request 'GET / HTTP/1.0' returned nothing, a dropped connection or HTTP request timeout indication.
+
+    The HTTP request does not end in two carriage returns. Waiting for timeout...
+    SUCCESS: HTTP request 'GET / HTTP/1.0\r\n' returned nothing, a dropped connection or HTTP request timeout indication.
+
+    The client has requested FTP. Sending error.
+    SUCCESS: HTTP request 'GET / FTP/1.0\r\n\r\n' correctly reported an HTTP error
+
+    The client has requested the wrong version of HTTP. Sending error.
+    SUCCESS: HTTP request 'GET / HTTP/1.1\r\n\r\n' correctly reported an HTTP error
+
+    The client has requested a page. Reporting a 404 error.
+
+    The page request does not end in two carriage returns. Waiting for timeout...
+    SUCCESS: HTTP request 'GET /this_page_should_not_exist HTTP/1.0\r\n\r\n' returned HTTP response code 404
+    SUCCESS: Response includes valid and correct content-length field
+
+    tcp port did not respond
+    FAIL: Fails to make outbound TCP connection on specified port.
+    FAIL: Other tests suppressed due to dependence on the above.
+    Passed 10 of 25 tests.
+    Score for functional aspects of assignment 1 will be 33%.
+    Score for style (0% -- 16%) will be assessed manually.
+    Therefore your grade for this assignment will be in the range 33% -- 49% (F -- F)
+    About to kill student process 16283
+    Seeing how that went.
+
 If compilation failed, or any lines begin with FAIL, then tell git that it is a bad commit with:
 
     git bisect bad
     
 Similarly, if it takes too long to run (more than about a minute), then just press CONTROL and C to tell it to stop, and then issue the `git bisect bad` command.
 
+If, on the other hand, 25 of 25 tests pass, then tell git that this version is good, with `git bisect good`
+
+Repeat this process until git shows you something like:
+
+~/tmp/2014SE3 {gardners}:git bisect good                                                        
+    b33abc3702f514e034ff106eed955210acc3e398 is the first bad commit
+    commit b33abc3702f514e034ff106eed955210acc3e398
+    Author: gardners <paul@servalproject.org>
+    Date:   Thu Mar 20 11:06:54 2014 +1030
+
+        Uninformative commit message
+
+    :040000 040000 96fbdfaf07f0f2339880e2c39999b9ec54f2a349 eaa9d4f511825d769f8a70c1916b0cd31f189cc0 M      pracs
+
+The first line `b33abc3702f514e034ff106eed955210acc3e398 is the first bad commit` is the important one, telling you the first commit that is bad.
+
+Finishing up
+------------
+
+Now that you know the first bad commit, you can work out the last good commit by looking through the git history with `git log`
+
+In the `git log` listing, search for the first bad commit by typing a / followed by the first few characters of the commit and pressing ENTER.
+
+Using the commit b33abc37... above, this will display a screen beginning with something like:
+
+    commit b33abc3702f514e034ff106eed955210acc3e398
+    Author: gardners <paul@servalproject.org>
+    Date:   Thu Mar 20 11:04:14 2014 +1030
+
+        Uninformative commit message
+
+    commit 772a6ba9889f0832f5553dbdca598d302b686ab1
+    Author: gardners <paul@servalproject.org>
+    Date:   Thu Mar 20 11:03:51 2014 +1030
+
+        Uninformative commit message
+
+b33abc3... is the first bad commit, and 772a6ba... is the previous commit, so it must be the last good commit.
+
+You now need to prove this, and produce documentation to show this so that you can submit a bug report.
+
+For each of those two commits, you will want to check them out using `git checkout commmit_id`, where `commit_id` is replaced with the commit (or the first few characters of it), e.g.:
+
+    git checkout b33abc37
+    
+Then compile the program again, so that you can show that some of the tests fail:
 
