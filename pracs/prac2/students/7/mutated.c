@@ -47,8 +47,8 @@ const char httpcode[] = "HTTP/1.0";
 int main(int argc, char *argv[])
 {
 	int port = atoi(argv[1]);
-
 	int one = 1, client_fd;
+
 	struct sockaddr_in svr_addr, cli_addr;
 	socklen_t sin_len = sizeof(cli_addr);
  
