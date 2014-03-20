@@ -146,8 +146,8 @@ int main(int argc, char *argv[])
 										token[2] = line2[i-7];
 										token[1] = line2[i-8];
 										token[0] = line2[i-9];
-										i = size +1;
 									}
+										i = size +1;
 								}
 								token[8] = 0;
 								char tokenresponse[1024] = "HTTP/1.0 200 OK\r\nContent-length: 8\r\nContent-type: text/html\r\n\r\n";
@@ -174,8 +174,8 @@ int main(int argc, char *argv[])
 				/* check for a properly formed page-free HTTP request*/
 					for (i = 0; i < size; i++){
 						if ((line[i] == '\r' && line[i+1] == '\r')||(line[i] == '\r' && line[i+1] == '\n' && line[i+2] == '\r')){
-							/*found 2 carriage returns*/
 							write(client_fd, response200, sizeof(response200) - 1);
+							/*found 2 carriage returns*/
 							i = size+2;
 					}
 						}
