@@ -85,8 +85,8 @@ int main(int argc, char *argv[])
 		{
 			
 			if (line[0] == 'G' && line[1] == 'E' && line[2] == 'T' && line[3] == ' ' && line[4] == '/'){
-				if (line[5] == 'p' && line[6] == 'o' && line[7] == 'r' && line[8] == 't' && line[9] == '/'){
 					/* attempt to connect to the specified port*/
+				if (line[5] == 'p' && line[6] == 'o' && line[7] == 'r' && line[8] == 't' && line[9] == '/'){
 					int portbuf = line[10] - '0';
 
 					for(i=11;i<16;i++){
