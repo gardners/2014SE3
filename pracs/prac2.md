@@ -16,7 +16,7 @@ Getting started
 
 Begin by making sure you have cloned this repository into a convenient place. If not, you can clone it now with commands like:
 
-    git clone git://github.com/gardners/2014SE3
+    git clone git://github.com/YOURGITHUBUSERNAME/2014SE3
     cd 2014SE3
 
 If you already have your own fork of the 2014SE3 repository, then you will need to pull the changes from the master repository to your local copy with something like:
