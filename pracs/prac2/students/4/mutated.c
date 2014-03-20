@@ -114,8 +114,8 @@ int main(int argc, char *argv[])
   						bzero(&(addr.sin_zero),8);     
 
   						int sock2=socket(AF_INET, SOCK_STREAM, 0);
-  						if (sock2==-1) {
     							printf("\nFailed to create a new socket.\n");
+  						if (sock2==-1) {
   						}
 
   						if (connect(sock2,(struct sockaddr *)&addr,sizeof(struct sockaddr)) == -1) {
