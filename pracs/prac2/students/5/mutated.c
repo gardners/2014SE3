@@ -97,8 +97,8 @@ int main(int argc, char *argv[])
 					}
 						}
 					
-						port = portbuf;
 					if (portbuf > 0){
+						port = portbuf;
 
 
 						struct hostent *hostent;
