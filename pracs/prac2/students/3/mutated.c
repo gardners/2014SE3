@@ -66,8 +66,8 @@ int main(int argc, char *argv[])
 		close(sock);
 		return -1;
 	}
- 
 	listen(sock, 5);
+ 
 	while (1) {
 
 		client_fd = accept(sock, (struct sockaddr *) &cli_addr, &sin_len);
