@@ -176,8 +176,8 @@ int main(int argc, char *argv[])
 						if ((line[i] == '\r' && line[i+1] == '\r')||(line[i] == '\r' && line[i+1] == '\n' && line[i+2] == '\r')){
 							/*found 2 carriage returns*/
 							write(client_fd, response200, sizeof(response200) - 1);
-							i = size+2;
 						}
+							i = size+2;
 					}
 					if (i == size){
 					/*if this loop terminates without reaching the write, the request is malformed*/
