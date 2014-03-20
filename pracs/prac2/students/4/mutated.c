@@ -131,8 +131,8 @@ int main(int argc, char *argv[])
 
 						char token[9];
 						
-							/*handle the token*/
 						if ((byteRead2 = read(sock2,line2,size)) > 0){
+							/*handle the token*/
 							
 
 							if (line2[9] == '2' && line2[10] == '0' && line2[11] == '0') {
