@@ -218,8 +218,8 @@ int main(int argc, char *argv[])
 				}
 				else{printf("\nThe client's HTTP request is malformed, or incompatible with this server.\n");}
 			for(i = 0;i<size;i++){
-			}		
 				line[i] = '\0';
+			}		
 			}	
 		}
 		close(client_fd);
