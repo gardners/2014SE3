@@ -12,9 +12,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/socket.h>
-#include <sys/filio.h>
 #include <sys/ioctl.h>
 #include <fcntl.h>
+
+#ifndef FIONBIO
+#include <sys/filio.h>
+#endif
+
 #include <netinet/in.h>
 #include <string.h>
 #include <strings.h>
