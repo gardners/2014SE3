@@ -34,8 +34,8 @@ This code is therefore released under the GPLv2.
 #include <strings.h>
 #include <signal.h>
 #include <netdb.h>
-#include <time.h>
 #include <errno.h>
+#include <time.h>
 
 const char response200[] = "HTTP/1.0 200 OK\r\nContent-length: 5\r\n\r\nHello";
 const char response400[] = "HTTP/1.0 400 BAD REQUEST\r\nContent-length: 11\r\n\r\nBad request";
