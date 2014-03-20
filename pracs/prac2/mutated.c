@@ -24,8 +24,8 @@ This code is therefore released under the GPLv2.
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <sys/socket.h>
+#include <unistd.h>
 #include <sys/filio.h>
 #include <sys/ioctl.h>
 #include <fcntl.h>
