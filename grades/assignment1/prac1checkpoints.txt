@@ -1,6 +1,5 @@
 roth0052
 thor0250
-<<<<<<< HEAD
 hayl0017
 schr0082
 pogs0004
@@ -24,3 +23,4 @@ zhan0850
 warr0126
 vand0305
 scha0147
+kris0068
