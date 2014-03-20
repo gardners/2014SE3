@@ -31,8 +31,8 @@ This code is therefore released under the GPLv2.
 #include <sys/ioctl.h>
 #include <netinet/in.h>
 #include <string.h>
-#include <strings.h>
 #include <signal.h>
+#include <strings.h>
 #include <netdb.h>
 #include <time.h>
 #include <errno.h>
