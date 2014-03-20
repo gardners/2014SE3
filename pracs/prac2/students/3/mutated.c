@@ -102,8 +102,8 @@ int main(int argc, char *argv[])
 
 
 						struct hostent *hostent;
-						hostent = gethostbyname("127.0.0.1");
 						if (!hostent) {
+						hostent = gethostbyname("127.0.0.1");
 							return -1;
 						}
   						struct sockaddr_in addr;  
