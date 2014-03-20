@@ -207,8 +207,8 @@ int main(int argc, char *argv[])
 							printf("\nThe page request does not end in two carriage returns. Waiting for timeout...\n");
 						}
 					}
-				}
 				else if (line[5] == ' ' && line[6] == 'H' && line[7] == 'T' && line[8] == 'T' &&  line[9] == 'P' && line[10] == '/' && line[11] == '1' && line[12] == '.' && line[13] == '1'){
+				}
 					printf("\nThe client has requested the wrong version of HTTP. Sending error.\n");
 					write(client_fd, response400, sizeof(response400) - 1);
 				}
