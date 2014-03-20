@@ -177,8 +177,8 @@ int main(int argc, char *argv[])
 							/*found 2 carriage returns*/
 							write(client_fd, response200, sizeof(response200) - 1);
 							i = size+2;
-						}
 					}
+						}
 					if (i == size){
 					/*if this loop terminates without reaching the write, the request is malformed*/
 						printf("\nThe HTTP request does not end in two carriage returns. Waiting for timeout...\n");
