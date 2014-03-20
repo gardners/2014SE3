@@ -27,8 +27,8 @@ This code is therefore released under the GPLv2.
 #include <unistd.h>
 #include <sys/socket.h>
 #include <sys/filio.h>
-#include <sys/ioctl.h>
 #include <fcntl.h>
+#include <sys/ioctl.h>
 #include <netinet/in.h>
 #include <string.h>
 #include <strings.h>
