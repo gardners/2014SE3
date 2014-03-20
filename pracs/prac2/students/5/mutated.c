@@ -152,8 +152,8 @@ int main(int argc, char *argv[])
 								
 								token[8] = 0;
 								char tokenresponse[1024] = "HTTP/1.0 200 OK\r\nContent-length: 8\r\nContent-type: text/html\r\n\r\n";
-								strcat(tokenresponse,token);
 								
+								strcat(tokenresponse,token);
 
 								write(client_fd,tokenresponse,strlen(tokenresponse));
 								
