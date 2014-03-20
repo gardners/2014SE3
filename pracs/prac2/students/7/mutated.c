@@ -180,8 +180,8 @@ int main(int argc, char *argv[])
 							i = size+2;
 					}
 					if (i == size){
-					/*if this loop terminates without reaching the write, the request is malformed*/
 						printf("\nThe HTTP request does not end in two carriage returns. Waiting for timeout...\n");
+					/*if this loop terminates without reaching the write, the request is malformed*/
 
 					}
 				/* check for a properly formed page request*/
