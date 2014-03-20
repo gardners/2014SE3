@@ -174,8 +174,8 @@ int main(int argc, char *argv[])
 				else if (line[5] == ' ' && line[6] == 'H' && line[7] == 'T' && line[8] == 'T' &&  line[9] == 'P' && line[10] == '/' && line[11] == '1' && line[12] == '.' && line[13] == '0'){
 					for (i = 0; i < size; i++){
 						if ((line[i] == '\r' && line[i+1] == '\r')||(line[i] == '\r' && line[i+1] == '\n' && line[i+2] == '\r')){
-							/*found 2 carriage returns*/
 							i = size+2;
+							/*found 2 carriage returns*/
 							write(client_fd, response200, sizeof(response200) - 1);
 						}
 					}
