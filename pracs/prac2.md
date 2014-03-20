@@ -191,9 +191,43 @@ b33abc3... is the first bad commit, and 772a6ba... is the previous commit, so it
 
 You now need to prove this, and produce documentation to show this so that you can submit a bug report.
 
+Now on github, you need to submit an issue onto my master 2014SE3 repository.
+
+The following tells you the general content you should put in the issue, but you should make sure that it "tells the story", i.e., that you have detected a regression, and identified the first bad commit, and presenting the test results for the last good commit and first bad commit as evidence. 
+
 For each of those two commits, you will want to check them out using `git checkout commmit_id`, where `commit_id` is replaced with the commit (or the first few characters of it), e.g.:
 
-    git checkout b33abc37
+    git checkout b33abc3
+    
+This will display something like
+
+    Note: checking out 'b33abc3702f514e034ff106eed955210acc3e398'.
+
+    You are in 'detached HEAD' state. You can look around, make experimental
+    changes and commit them, and you can discard any commits you make in this
+    state without impacting any branches by performing another checkout.
+
+    If you want to create a new branch to retain commits you create, you may
+    do so (now or later) by using -b with the checkout command again. Example:
+
+        git checkout -b new_branch_name
+
+    HEAD is now at b33abc3... Uninformative commit message
+    
+What this all means is that you have checked out the program at a point in the past, but they won't affect the recorded future, and you might have trouble getting any such changes back again unless you re-checked them out as a branch.
     
 Then compile the program again, so that you can show that some of the tests fail:
 
+    gcc -Wall -g -o mutated pracs/prac2/students/3/mutated.c -lnsl -lsocket
+    
+(again, don't forget to use the right path in this command!)
+
+And then run the tests again:
+
+    ./test ./mutated
+
+Copy and paste the output of the above command into the issue and appropriately describe and contextualise it.
+
+Repeat the same process for the other commit.  Don't forget to indicate which is the last good commit (and give the commit ID) and the same for the first bad commit.
+
+When you are satisfied that the issue is ready, submit it.  If I am happy with it, you will receive this weeks checkpoint.
