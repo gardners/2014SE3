@@ -19,8 +19,8 @@ As you begin to think about implementing this game, I want you to be thinking ab
 
 We are also going to follow a development process more based on agile software development, rather than the waterfall model or some other monolithic approach to software development.
 
-Writing (un)testable code
--------------------------
+Programming sushi-train style: many small bites.
+------------------------------------------------
 
 If you would like to use it, a skeleton (in C) you can use to get started is at: 
 
@@ -28,19 +28,38 @@ https://github.com/gardners/se3prac3
 
 Fork and clone this repository so that you can use it as the basis for your work.  To compile this project, type `make`, and if that succeeds, to run the game type `./2048` to run the `2048` executable from your current working directory.
 
-Or if you prefer to work in another language, you can create a project in whatever language you like, and work there.  However, you must still create a git repository visible on github to manage your source code and provide visibility for me into you work for marking.
+I will also include a compiled executable called `sample2048` in that repository that you can use for reference to understand the functionality I will eventually expect from your programme.
+
+If you prefer to work in another programming language, such as Java, you can create a project in whatever language you like, and work there.  However, you must still create a git repository visible on github to manage your source code and provide visibility for me into you work for marking, and be aware that the assistance I will be providing will be focussed on the C skeleton.
 
 In either case, take a look through the commit history for the skeleton I have provided. You will see that each commit contains a very small amount of work, sometimes just a single line added or changed, or a small routine written.  Often the commits are made only a minute or two apart.  This is a good way to work.  Each change can be easily understood, tested and examined.  It also makes it easy for you to backtrack through your changes when (not if) you make a mistake.
 
-To receive today's checkpoint
+To receive today's checkpoint you will need to make at least ten meangingful, and ideally fairly small, and well described commits to your repository.  It doesn't matter at this stage how well your program works -- what is being assessed is your ability to write software making good use of source control to "checkpoint" your work at each step.
+
+This approach is much easier if you start to decompose the problem into the smallest possible units.  
+
+For example, you know that you will need to tilt the grid.  Tilting the grid is the same in all directions, so a single tilt routine that tilts in one particular direction is better than multiple ones for each direction.  Pair this single routine with routines to rotate the grid before and after the tilt, and you will have a much simpler solution.  
+
+In turn, the tilting of the entire board is the tilting of each of its rows or slices.  Write a routine that is passed a single slice of the board, and implements the tilting logic on that.
+
+Take care to pass everything that each routine needs in as arguments, instead of relying on any global state.  This will mean that your routines are discrete, and if fed with appropriate input, can be tested independently of the entire program, which will support our goal of writing unit tests (tests of each routine) for your program.  This will allow you to fix bugs easily and early, greatly accelerating your speed of development.
+
+In fact, the best approach is to start with a small part of the program, such as tilting the board in a single direction, decompose the problem into simple parts that can be written in 30 lines or less, which in this case will primarily be tilting a single row of the board, and then write a test function that passes all sorts of input into the function so that you can immediately test it.  Then you will be able to quickly identify and fix any problems with those routines, and proceed to assembling them into the next higher-level abstraction with confidence.  Using this approach I was able to write a sample solution in about 2 hours, including writing the tests. 
+You have a skeleton and the information above to give you a head start, so it is possible that some of you will be able to finish the entire program during the prac, and certainly by next week.
+
+So, to recap some of the above:
+
+  * Starting with the board tilting, decompose the problem as far as practicable.
+  * Write tests, beginning at the lowest level, then write the matching routines, fixing bugs until all of your tests pass.
+  * Compose the next higher level functions from the lower level functions that you have just written and tested.
+  * Repeat recursively until you have all the functionality you require.
+  * Start with writing a routine to tilt a row of the board to the left, writing test cases for the various situations.
+
 Now plough on ahead and write code to try to implement this game!  
 
-I will also include a compiled executable called `2048` in that repository that you can use for reference.
+To get today's checkpoint.
+--------------------------
 
+To receive today's checkpoint you will need to make at least ten meangingful, and ideally fairly small, and well described commits to your repository.  It doesn't matter at this stage how well your program works -- what is being assessed is your ability to write software making good use of source control to "checkpoint" your work at each step.
 
--------------------------
-
-A primary consideration should be how you are going to test the resulting software.
-
-If
-
+Then create an issue on my 2014S3 repository with a link to the github URL of your repository so that I can examine the commit log.
