@@ -36,21 +36,52 @@ In either case, take a look through the commit history for the skeleton I have p
 
 To receive today's checkpoint you will need to make at least ten meangingful, and ideally fairly small, and well described commits to your repository.  It doesn't matter at this stage how well your program works -- what is being assessed is your ability to write software making good use of source control to "checkpoint" your work at each step.
 
+Decomposing the problem
+-----------------------
+
 This approach is much easier if you start to decompose the problem into the smallest possible units.  
 
 For example, you know that you will need to tilt the grid.  Tilting the grid is the same in all directions, so a single tilt routine that tilts in one particular direction is better than multiple ones for each direction.  Pair this single routine with routines to rotate the grid before and after the tilt, and you will have a much simpler solution.  
 
 In turn, the tilting of the entire board is the tilting of each of its rows or slices.  Write a routine that is passed a single slice of the board, and implements the tilting logic on that.
 
+Writing easily testable functions
+---------------------------------
+
 Take care to pass everything that each routine needs in as arguments, instead of relying on any global state.  This will mean that your routines are discrete, and if fed with appropriate input, can be tested independently of the entire program, which will support our goal of writing unit tests (tests of each routine) for your program.  This will allow you to fix bugs easily and early, greatly accelerating your speed of development.
 
-In fact, the best approach is to start with a small part of the program, such as tilting the board in a single direction, decompose the problem into simple parts that can be written in 30 lines or less, which in this case will primarily be tilting a single row of the board, and then write a test function that passes all sorts of input into the function so that you can immediately test it.  Then you will be able to quickly identify and fix any problems with those routines, and proceed to assembling them into the next higher-level abstraction with confidence.  Using this approach I was able to write a sample solution in about 2 hours, including writing the tests. 
+Test-Driven Development
+-----------------------
+
+In fact, the best approach is to start with a small part of the program, such as tilting the board in a single direction, decompose the problem into simple parts that you believe can be written in 30 lines or less, which in this case will primarily be tilting a single row of the board, and then write a test function that passes all sorts of input into the function so that you can immediately test it.  Then you will be able to quickly identify and fix any problems with those routines, and proceed to assembling them into the next higher-level abstraction with confidence.  Using this approach I was able to write a sample solution in about 2 hours, including writing the tests. 
 You have a skeleton and the information above to give you a head start, so it is possible that some of you will be able to finish the entire program during the prac, and certainly by next week.
+
+Writing a test driver
+---------------------
+
+From a practical perspective, you will want to have a separate build target that includes the test driver.  Such a target has been setup in the build process of the skeleton for you in `test.c`.  Look through that file, and you will see that I have created a layered approach that allows vectors to the tilt left function to be easily passed in, and compared with expected output, and have any mismatches reported.  
+
+Running `make test` will rebuild the test driver, and `./test` will run it.  Initially you will see output like:
+
+    Empty list is empty after shift - PASSED.
+    Value on left stays on left after shift - PASSED.
+    Value on right shifts to left edge after shift - FAILED: {0,0,0,1} became {0,0,0,1} instead of {1,0,0,0}
+    Value in middle shifts to left edge after shift - FAILED: {0,0,1,0} became {0,0,1,0} instead of {1,0,0,0}
+    Distinct values don't combine - PASSED.
+    Combinations don't cascade - FAILED: {1,1,1,1} became {1,1,1,1} instead of {2,2,0,0}
+    Tilting {0,0,1,1} left yields {2,0,0,0} - FAILED: {0,0,1,1} became {0,0,1,1} instead of {2,0,0,0}
+    Tilting {4,0,1,1} left yields {4,2,0,0} - FAILED: {4,0,1,1} became {4,0,1,1} instead of {4,2,0,0}
+    Tilting {2,0,1,1} left yields {2,2,0,0} - FAILED: {2,0,1,1} became {2,0,1,1} instead of {2,2,0,0}
+
+Running the tests regularly will allow you to focus on the next nibble of functionality to attack, as well as confirm that your progressive changes don't cause other tests to fail.  For example, from the output above, it probably makes sense to next work on sliding all non-zero values as far left as possible, and see if the third and fourth tests can be made to pass.
+
+Summary
+-------
 
 So, to recap some of the above:
 
   * Starting with the board tilting, decompose the problem as far as practicable.
-  * Write tests, beginning at the lowest level, then write the matching routines, fixing bugs until all of your tests pass.
+  * Write tests before writing the routine under test, beginning at the lowest level, then write the matching routines, fixing bugs until all of your tests pass.
   * Compose the next higher level functions from the lower level functions that you have just written and tested.
   * Repeat recursively until you have all the functionality you require.
   * Start with writing a routine to tilt a row of the board to the left, writing test cases for the various situations.
