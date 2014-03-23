@@ -22,13 +22,20 @@ We are also going to follow a development process more based on agile software d
 Writing (un)testable code
 -------------------------
 
-Now ignore what I just said, and just dive in and start work on this task.  I'll provide you with a skeleton for handling the keyboard input.  The only requirement at this time, is that you create a git repository, and do the development under source control.  A skeleton you can use is at: 
+If you would like to use it, a skeleton (in C) you can use to get started is at: 
 
 https://github.com/gardners/se3prac3 
 
-Take a look through the commit history for this, and you will see that each commit contains a very small amount of work, sometimes just a single line added or changed, or a small routine written.  This is a good way to work.  Each change can be easily understood, tested and examined.
+Fork and clone this repository so that you can use it as the basis for your work.  To compile this project, type `make`, and if that succeeds, to run the game type `./2048` to run the `2048` executable from your current working directory.
 
-Now plough on ahead and write code to try to implement this game!  I will also include a compiled executable called `2048` in that repository that you can use for reference.
+Or if you prefer to work in another language, you can create a project in whatever language you like, and work there.  However, you must still create a git repository visible on github to manage your source code and provide visibility for me into you work for marking.
+
+In either case, take a look through the commit history for the skeleton I have provided. You will see that each commit contains a very small amount of work, sometimes just a single line added or changed, or a small routine written.  Often the commits are made only a minute or two apart.  This is a good way to work.  Each change can be easily understood, tested and examined.  It also makes it easy for you to backtrack through your changes when (not if) you make a mistake.
+
+To receive today's checkpoint
+Now plough on ahead and write code to try to implement this game!  
+
+I will also include a compiled executable called `2048` in that repository that you can use for reference.
 
 
 -------------------------
