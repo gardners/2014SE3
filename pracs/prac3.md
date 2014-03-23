@@ -22,8 +22,13 @@ We are also going to follow a development process more based on agile software d
 Writing (un)testable code
 -------------------------
 
-Now ignore what I just said, and just dive in and start work on this task.  I'll provide you with a skeleton for handling the keyboard input (if it isn't linked here, then poke me, and I will put it here, it's just that I haven't written it yet).  The only requirement at this time, is that you create a git repository, and do the development under source control.  I'll make a repository on github that you can clone to use as your starting point.
+Now ignore what I just said, and just dive in and start work on this task.  I'll provide you with a skeleton for handling the keyboard input.  The only requirement at this time, is that you create a git repository, and do the development under source control.  A skeleton you can use is at: 
 
+https://github.com/gardners/se3prac3 
+
+Take a look through the commit history for this, and you will see that each commit contains a very small amount of work, sometimes just a single line added or changed, or a small routine written.  This is a good way to work.  Each change can be easily understood, tested and examined.
+
+Now plough on ahead and write code to try to implement this game!  I will also include a compiled executable called `2048` in that repository that you can use for reference.
 
 
 -------------------------
