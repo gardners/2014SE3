@@ -19,5 +19,16 @@ As you begin to think about implementing this game, I want you to be thinking ab
 
 We are also going to follow a development process more based on agile software development, rather than the waterfall model or some other monolithic approach to software development.
 
+Writing (un)testable code
+-------------------------
 
+Now ignore what I just said, and just dive in and start work on this task.  I'll provide you with a skeleton for handling the keyboard input (if it isn't linked here, then poke me, and I will put it here, it's just that I haven't written it yet).  The only requirement at this time, is that you create a git repository, and do the development under source control.  I'll make a repository on github that you can clone to use as your starting point.
+
+
+
+-------------------------
+
+A primary consideration should be how you are going to test the resulting software.
+
+If
 
