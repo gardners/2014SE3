@@ -91,8 +91,8 @@ Now plough on ahead and write code to try to implement this game!
 To get this checkpoint.
 -----------------------
 
-To receive this checkpoint you will need to make at least ten meangingful, and ideally fairly small, and well described commits to your repository.  It doesn't matter at this stage how well your program works -- what is being assessed is your ability to write software making good use of source control to "checkpoint" your work at each step, and ideally to write tests before you write the body of the functions.
+To receive this checkpoint you will need to make at least ten meangingful, and ideally fairly small, and well described commits to your repository.  It doesn't matter at this stage how well your program works -- what is being assessed is your ability to write software making good use of source control to "checkpoint" your work at each step, and that you write tests before you write the body of the functions.  Commits to code that preceed the associated test will not count.
 
 Then update the grades file for prac3 in your fork of the 2014SE3 repository, and include a link to the github URL of your repository in the comment to the pull request so that I can examine your commit log.
 
-Checkpoint four will require test-driven development, i.e., the writing of tests before the functions, so you may as well start doing that now, and get ahead.
+Checkpoint four will be a continuation of this test-driven development, i.e., the writing of tests before the functions.  The milestone will be having substantially all of the required functionality of the 2048 game complete.
