@@ -75,6 +75,13 @@ Running `make test` will rebuild the test driver, and `./test` will run it.  Ini
 
 Running the tests regularly will allow you to focus on the next nibble of functionality to attack, as well as confirm that your progressive changes don't cause other tests to fail.  For example, from the output above, it probably makes sense to next work on sliding all non-zero values as far left as possible, and see if the third and fourth tests can be made to pass.
 
+Where to start
+--------------
+
+The tests I have given you in the skeleton that fail are for the `tilt_line_left()` function in `tilt.c`.  So you will want to start implementing that function.
+
+For those not familiar with C, the values passed into this function throught the `int *list` argument are available as `list[0]`, `list[1]` and so on. So to check if the first item is zero, you would use something like `if (list[0]==0) { /* leftmost value is zero */ }`
+
 Summary
 -------
 
