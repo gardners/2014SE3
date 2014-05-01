@@ -1,5 +1,4 @@
-Test Plan
-=========
+#Test Plan
 
 1. Introduction
 2. Testing objectives and Objectives
