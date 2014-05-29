@@ -1,0 +1,23 @@
+cook0286
+
+SE3 Prac 9 – Report  
+Pair Programming
+My experience in the two hours was not very positive in terms of getting the job done. 
+I don’t know if it was the pressure, overcrowding in the room and the temptation of collaboration is more prominent than actually performing pair programming especially when the level is close to similar or tasks has not been planned.
+Most of the time we were very tempted to collaborate on creating a testing plan to navigate with. It was easier for us to collaborate.
+
+
+The team that I had worked with did not have the same level of experience, the programming language use is limited, work environment was unfamiliar to the visiting students. I had a few temptations of actually looking at the specs on my own to design and write the program according to the specification.
+
+We discussed afterwards that it may be due to the knowledge, programming environment and pressure etc.
+
+My university lab partner and I had a discussion afterwards that if we were to do this we may have better chances of making pair programming work for the both of us because our style and the choice of programming language is similar. Switching roles may be easier when things to look up or execute is unknown to the driver but known to the navigator.
+
+Alternative option 
+Instead of coding we wrote a story using the words blimp, turnip, serendipity, scissors, flange sofa and casaba melon.
+
+
+The Blimp is going over the Antarctic.
+She serendipitously found the Scissors to cut up the turnip. 
+The leaves of the cut up turnip got stuck at the flange of the sink drain. 
+She then sat comfortably on the sofa eating a casaba melon and the turnip slices. 
