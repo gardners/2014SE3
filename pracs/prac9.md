@@ -16,3 +16,7 @@ and acknowledgement of contributing to a real software project will be invaluabl
 you in many ways.
 
 To obtain the checkpoint you must submit an issue that refers to sufficient evidence of the work you have done, and where it has been submitted.
+
+Assistance will be provided to write tests for the Serval Succinct Data project
+which consists of the https://github.com/servalproject/smac and https://github.com/servalproject/survey-acquisition-management
+repositories.
