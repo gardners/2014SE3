@@ -36,8 +36,7 @@ Example invocations of smac to do various things:
 
 	./smac recipe map succinct_recipes succinct_output
 
-(note that (1) must be run before (2) can be run, as it uses the XML forms obtained
-during (1).)
+	(note that (1) must be run before (2) can be run, as it uses the XML forms obtained during (1).)
 
 3. To strip the data out of an ODK form instance:
 
