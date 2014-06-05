@@ -19,4 +19,4 @@ To obtain the checkpoint you must submit an issue that refers to sufficient evid
 
 Assistance will be provided to write tests for the Serval Succinct Data project
 which consists of the https://github.com/servalproject/smac and https://github.com/servalproject/survey-acquisition-management
-repositories.
+repositories.  Example form and recipe files exist in https://github.com/servalproject/succinct-data-example-config-bundles/tree/master/examples/kiwiex-2013
