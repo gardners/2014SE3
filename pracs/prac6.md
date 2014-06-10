@@ -19,7 +19,6 @@ Distributed weather stations
 Control system
 	Calculate how far open the dam gates need to be based on a formula which uses the gate position, change in dam level and rainfall
 
-
 Each function can fail in one or more ways
 	Control system can open and close to control the flow of water from the dam
 		Gates don't open
