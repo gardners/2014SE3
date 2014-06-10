@@ -1,3 +1,5 @@
+For a formatted copy of this test plan see https://github.com/pars0098/2014SE3/blob/master/pracs/prac5.pdf
+
 2048 Test Plan
 
 Introduction
