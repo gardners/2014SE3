@@ -60,6 +60,6 @@ After having experienced a couple of hours of pair programming, reflect on your 
   What benefits did you experience.  Were you faster? was your code more correct?
   What difficulties did you experience?
   What would worked well, and what would you change next time?
-  Would you use peer programming in the future given the chance?
+  Would you use pair programming in the future given the chance?
 
 Submit a ~500 word summary of your reflection as the text of a pull request to add your FAN to the prac8 grade file.
