@@ -1,0 +1,313 @@
+log copy for clar0737 checkpoints 3,4,7:
+
+commit f38094c0c03ed24358720b728cd06043f5091d9e
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 19:49:42 2014 +0930
+
+    added final 16 white box tests for tilt functions
+
+commit 822f402d1a7ecf8c3a6d76adc2f721f57a668049
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 19:41:39 2014 +0930
+
+    added first 16 white box boundary test cases
+
+commit 9d56003f7fb6295037440a483d04a974acda24e7
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 17:51:17 2014 +0930
+
+    added null board handling
+
+commit 7288196e9947857891fbb1103111c8a9eb99dfd4
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 17:22:40 2014 +0930
+
+    added board size boaundary conditions to several functions
+
+commit 9117352525162e844b658a25d456bf0c6af1ebd1
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 17:01:36 2014 +0930
+
+    added tilt down tests
+
+commit 1e93b413e6d294b89b185943712c10af9acd756d
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:59:31 2014 +0930
+
+added tilt board down
+
+commit 55c8d3f0fb50a70754e662d9d525ebd4ab72a92d
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:59:05 2014 +0930
+
+    added tilt board down
+
+commit 5fa7dc821f7c00b55c974448d2ff5f2483b2fb72
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:55:24 2014 +0930
+
+    fixed up tilt
+
+commit 818ad27d2e302e014fe48e2d84e8c2d5c4d670e8
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:52:59 2014 +0930
+
+    fixed up tilt test
+
+commit 1df303653aae8ccae5d669cd48ccde0e678378f9
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:44:05 2014 +0930
+
+    added up basic up tilt
+
+commit 5585f03fc4d53775c5ba9bd13011c91c27c8f1d8
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:41:16 2014 +0930
+
+    added up basic up tilt test
+
+commit 87d152dd064d1181b4d7f2260d26c9d7f93048ef
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:38:35 2014 +0930
+
+    added tilt board up
+
+commit ca74fbdc145cd8eb565bc379dbffece48861b62a
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:26:36 2014 +0930
+
+    added board rotate left tests
+
+commit e8d1a2f52cda862910e779c338aab107f1dd8104
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:26:18 2014 +0930
+
+    fixed rotate left
+
+commit b8106194dc1005326ab5d4f0f5162e4644b5b89d
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:06:39 2014 +0930
+
+    added rotate left
+
+commit cdff34a0ab6f1b72701b8e73835683379a272217
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 16:06:13 2014 +0930
+
+    added rotate left
+
+commit 870f5240da435a2bc924a310eadb75dac86f5ce2
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 13:45:11 2014 +0930
+
+ fixed minor problem in 4*4 test
+
+commit f8a156a63a9a49c896578069c8cebc37ec6f4d3d
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 13:38:45 2014 +0930
+
+    passes 3*3 tests
+
+commit 6815878360e28aa1e86f6bd16f3f21d4c8811d49
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 13:27:49 2014 +0930
+
+    removed regression failures
+
+commit 821d10c33084d9e4bb4b70145df57dac5a372bc4
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 12:33:51 2014 +0930
+
+    imrpived 3*3 and 4*4 behavior- still doesn't work for outer ring
+
+commit 24dd152eaf79074eabebe28668a0b9be2c62e11e
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 12:33:26 2014 +0930
+
+    addded 3*3 and 4*4 tetss
+
+commit 5bf4b97511f5d7e2f7789a3351358981459685f6
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 11:10:52 2014 +0930
+
+    fixed 2*2 test for real this time- made all references consistant
+
+commit a31d7e6c514ea720aa249f078a200fe32c0fa652
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Jul 3 11:03:40 2014 +0930
+
+    fixed 2*2 test
+
+commit bff36d655dbd885c68bbf95114cb4faba1e80b43
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon Jun 30 11:36:17 2014 +0930
+
+    fixed array referencing for board rotate
+
+commit be965392409c2815a2060988995261e7cd170f08
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon Jun 30 10:41:16 2014 +0930
+
+    fixed output comparison for board tests
+
+commit 41bb0b8410bf91bdd10da3456e5889211fd9921c
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon Jun 30 09:22:06 2014 +0930
+
+    fixed repeated functions and added test call for board
+
+commit 0cedb847a5b849228c4d32e250df712d1783b59b
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon Jun 30 09:17:41 2014 +0930
+
+    finally got test compiling
+
+commit fb3f20adf4652fb5ebe06dd4054392ae22495719
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon Jun 30 09:16:07 2014 +0930
+
+    corrected function name
+
+commit 51eb66ddef3892dc22c4c98f7cf8650797ea996c
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon Jun 30 09:15:45 2014 +0930
+
+    added rotate to header
+
+commit fb127653e53297b5c6f30e86fbf36930f4bf3434
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 15:05:36 2014 +0930
+
+    altered function call to correct board size
+
+commit b08206c20dc8833db61bcb5ce18afac2106069ac
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 15:05:11 2014 +0930
+
+    fixed loop termination value
+
+commit cd4d735632c41a92603f96e20623c7b07a37c325
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 14:54:28 2014 +0930
+
+    fixed all remaining  ./test.c compile time errors
+
+commit eb5aa0692f5a32fb57e7b47e263a97ee9dd15fb2
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 14:40:08 2014 +0930
+
+    fixed bracket issues in board_vector_test
+
+commit b5b974dd9bb2a52c85aaaa5d0972be37c2b926ef
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 14:08:46 2014 +0930
+
+    replaced 0 with o
+
+commit a5c2c2feb3e29a4f321afd0a52d0db4a63a8e8b4
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 14:06:06 2014 +0930
+
+    added missing definition
+
+commit 17a9c926cbaee5f73a1330fc4cf7523d42ddb6f2
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 14:02:15 2014 +0930
+
+    Fixed variable initialisation mistake
+
+commit 7ed0ad5f897b63af6fcf43596b1828a460c928c1
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 13:55:40 2014 +0930
+
+    added board test functions
+
+commit afbd4fef3e2f731064bfcc117634a9dc4b53dbfc
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Tue Jun 3 13:52:51 2014 +0930
+
+    added board function
+
+commit ddf3c3a9aa4e74eaa183805dc21febdc236bd1df
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:57:38 2014 +0930
+
+    Improved test message display
+
+commit 67c3c0f49e8cde19fe607e16ca7b6c131bf25120
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:55:24 2014 +0930
+
+    corrected tilt right test to cascade
+
+commit 4b5dc2df80e620c7e03f49d822251bea8f949d51
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:54:08 2014 +0930
+
+    corrected tilt right
+
+commit f78d9309ce7e98da854d84f41432ef7a63c3d254
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:51:13 2014 +0930
+
+    added tilt right
+
+commit 1da496d73876afa8aeccdc06cf667e4a0af6f52b
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:49:21 2014 +0930
+
+    corrected tilt right tests
+
+commit 8ff16b3d56e0f654caedab3a5b9293340860ee12
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:40:26 2014 +0930
+
+    added tilt right tests
+
+commit 1ac14d0b2136a9592d104c3b0455ef38a7dc464b
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:35:40 2014 +0930
+
+    added tilt right attempt1
+
+commit fe3df2cd113d7c9c185da2e35152f4c7213be155
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Mon May 19 09:32:27 2014 +0930
+
+    fixed problems with shift cascading
+
+commit 5b2674fbe62ac3a56cd87d3fefa53348110a96cc
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Apr 3 15:27:27 2014 +1030
+
+    fixed regression
+
+commit dc8a590687820f7f180e211a829ffbbd6f3e1acf
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Apr 3 15:22:27 2014 +1030
+
+    fixed problems with shift cascading
+
+commit aac60978f557176432c84cc064a186e52f39059e
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Apr 3 15:13:36 2014 +1030
+
+    Passed Combinations with regression
+
+commit cf25661dfebc19bb9620fc2e0527a89834a3d238
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Apr 3 14:44:52 2014 +1030
+
+    Passed Distinct Value Combination test
+
+commit b5c3fd68640a68a22d0edcf9d624aa0983a057af
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Mar 27 15:08:18 2014 +1030
+
+    Test descriptions completed and updated
+
+commit fb1b3040d7a34b68f6bf7e2f01d384e79cfaf836
+Author: Kevin Clark <clar0737@flinders.edu.au>
+Date:   Thu Mar 27 14:48:52 2014 +1030
+
+    Test on combination order added
