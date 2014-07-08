@@ -15,6 +15,20 @@ my @grades = (
 	"74,CR",
 	"80,DN",
 	"90,HD",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
+        "DUPLICATES",
 );
 
 for my $dir (qw/assignment1 assignment2/) {
