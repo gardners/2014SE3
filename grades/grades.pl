@@ -33,7 +33,8 @@ my @grades = (
 
 for my $dir (qw/assignment1 assignment2/) {
 	while (glob "$dir/prac*checkpoints.txt") {
-		open my $file, "<", $_;
+                `sort -u $_ > "temp.txt"`;
+		open(my $file, "<", "temp.txt");
 		while (my $fan = <$file>) {
 			chomp $fan;
 			$checkpoints{lc $fan}++;
